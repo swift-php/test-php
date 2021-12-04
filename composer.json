@@ -1,0 +1,36 @@
+{
+  "name": "swift-php/test-php",
+  "description": "A swift PHP framework.",
+  "authors": [
+    {"name": "sqk", "email": "601307105@qq.com"}
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "ext-json": "*",
+    "swift-php/framework": "dev-main",
+    "swift-php/component": "dev-main",
+    "swift-php/spl": "dev-main"
+  },
+  "require-dev": {
+    "swoole/ide-helper": "^4.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Application\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:swift-php/component.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:swift-php/spl.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:swift-php/framework.git"
+    }
+  ]
+}
